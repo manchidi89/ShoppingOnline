@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="myTitle">Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <style>/*This will costumize the primary button*/
+    .btn-primary{
+      background-color: rgb(96, 96, 120);
+    }
+    .btn-primary:hover{
+      background-color: black;
+    }
+    .thumbnail{
+      background-color: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top"><!--Thsi will ensure that the nav bar does not dissappear when scrolling down-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shopping</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown ">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Televisions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Computers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Monitors</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Brands
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li .text-color><a class="dropdown-item" href="#">Reluu</a></li>
+              <li class="bg-primary"><a class="dropdown-item" href="#" class="bg-primary">Kota</a></li>
+              <li><a class="dropdown-item" href="#">Stele</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Select Sizes
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">13-32 inches</a></li>
+                <li><a class="dropdown-item" href="#">42-55 inches</a></li>
+                <li><a class="dropdown-item" href="#">58-102 inches</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 shadow-lg  bg-body rounded" type="search" placeholder="Search"
+            aria-label="Search">
+          <button class="btn  btn-primary btn-sm" style="background-color:rgb(82, 49, 38); width: 160px;"
+            type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--This will enable the user to scroll type of product sold online e.g Television-->
+  <div class="containter-fluid">
+    <div id="selectedProducts" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#selectedProducts" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#selectedProducts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#selectedProducts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Images/beautyLaptop.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Computers</h5>
+            <p>The best low price and most efficient computers in the market</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/alienware-Hpaq-kBcYHk-unsplash.jpg" class="d-block w-100 img-responsive" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Watches</h5>
+            <p>Only time will tell ,well and reliable watches</p>
+          </div>
+
+        </div>
+
+    <div class="carousel-item">
+      <img src="./Images/howard-bouchevereau-Wx23XPAlseI-unsplash.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Televisions</h5>
+        <p>Digitally calibrated and the best hd television you can rely on.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#selectedProducts" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#selectedProducts" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+
+  <h5 class="text-center text-white bg-secondary my-2" style="text-decoration: underline;">Laptops
+  </h5>
+  <div class="row m-5 rounded"><!--To change all the the borders to have round edges-->
+    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/clement-helardot-95YRwf6CNw8-unsplash.jpg" class="card-img-top img-fluid" alt="BeautifulLaptop">
+      </div>
+      <div class="card-body">
+          <h5 class="card-title">Specification</h5>
+          <p>  13.7 inches/1TB SSD /i7 CPU/USB Type c </p>
+          <p class="card-text text-decoration-line-through text-center text-danger"> Was R345.95</p>
+          <p class="text-center text-success">Now R272.43</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/silverLaptop.jpg" class="card-img-top img-responsive" alt="RedLaptop">
+      </div>
+      <div class="card-body"> <h5 class="card-title">Specification</h5>
+        <p>  15 inches/1TB SSD /i7 CPU/USB Type 3.0/Color Red,Fast and Battery last longer </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R680.95</p>
+        <p class="text-center text-success">Now R480.95</p></div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/beautyLaptop.jpg" class="card-img-top img-thumbnail" alt="SilverLaptop"><!--Thumnail will give the image ability to adjust accordingly to the size of the container without losing resolutiion-->
+      </div>
+      <div class="card-body"> <h5 class="card-title">Specification</h5>
+        <p>  15 inches/1TB SSD /i7 CPU/USB Type 3.0/Color Grey/USB port 4 </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R340.95</p>
+        <p class="text-center text-danger">Now R380.95</p></div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/kari-shea-1SAnrIxw5OY-unsplash.jpg" class="card-img-top" alt="BlackKeyboard">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Specification</h5>
+        <p>  14 inches/1TB SSD /i9 11th generation CPU/USB Type 3.0/Color Silver/Gaming </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R880.95</p>
+        <p class="text-center text-success">Now R680.95</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h5 class="text-center text-white bg-secondary" style="text-decoration: underline;">Monitors</h5>
+  <div class="row m-5">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/designecologist-Pmh0UoG1vlE-unsplash.jpg" class="img-fluid" alt="BeautifulLaptop">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Specification</h5>
+        <p>  50 inches/Qled Display/i7 GPU/USB Type 3.0/Color White/HDMI/VGA/Bluetooth </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R1680.95</p>
+        <p class="text-center text-success">Now R1480.95</p>
+
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" alt="BlackKeyboard" class="img-fluid">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Specification</h5>
+        <p>  65 inches/UHd Display /i7 GPU/USB Type 3.0/Color Black/Wifi/IOT/HDMI </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was 3450.95</p>
+        <p class="text-center text-success">Now R2670.95</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h5 class="text-center text-white bg-secondary bg-opacity-75" style="text-decoration: underline;">Cellphones
+  </h5>
+  <div class="row m-5">
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/Cellphone3.jpg" class="img-fluid" class=" rounded float-start" alt="BeautifulLaptop">
+      </div>
+      <div class="card-body"> <h5 class="card-title">Specification</h5>
+        <p>  10 inches/32GB /Android OS/USB Type 3.0/Touch Screen/Wifi/Bluetooth </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R680.95</p>
+        <p class="text-center text-success">Now R480.95</p></div>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/Cellphone1.jpg" class="img-fluid" alt="RedLaptop" class=" rounded float-start">
+      </div>
+      <div class="card-body"> <h5 class="card-title">Specification</h5>
+        <p>  8.5 inches/32GB /Android OS/USB Type 3.0/Touch Screen/Wifi/Bluetooth </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R680.95</p>
+        <p class="text-center text-success">Now R480.95</p>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <img src="./Images/Cellphone2.jpg" class="card-img-top" alt="SilverLaptop" class=" rounded float-start">
+      </div>
+      <h5 class="card-title">Specification</h5>
+      <div class="card-body"> <p>  8.5 inches/32GB /Android OS/USB Type 3.0/Touch Screen/Wifi/Bluetooth </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R680.95</p>
+        <p class="text-center text-success">Now R480.95</p></div>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card border-0">
+        <img src="./Images/Cellphone4.jpg" class="card-img-top rounded-circle border-0" alt="BlackKeyboard" class=" rounded float-start">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Specification</h5>
+        <p>  8.5 inches/32GB /Android OS/USB Type 3.0/Touch Screen/Wifi/Bluetooth </p>
+        <p class="card-text text-decoration-line-through text-center text-danger"> Was R680.95</p>
+        <p class="text-center text-success">Now R480.95</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="d-flex align-items-end flex-column col-3">
+    <form action="#" class="">
+      <fieldset style="border-radius: 10px; border-color: rgba(23, 23, 23, 0.8);" id="MyContacts">
+        <legend style="background-color:rgba(171, 54, 54, 0.8);"> Contact Us </legend>
+        <address>
+          <p><i class="bi bi-envelope"></i> Email Address : <a href="mailto:manchidime01@gmail.com"
+              style="color: blue;">manchidime01@gmail.com</a>
+          </p>
+          <p><i class="bi bi-telephone-fill"></i> Cellphone No : <a href="tel:0646762894"
+              style="color: blue;">0839409252</a></p>
+          <p><i class="bi bi-house-fill"></i>Home Address : 3580 D08, Selcourt Estate, <p style="padding-left:120px ;">
+              Springs, 1567, South Africa
+            </p>
+          </p>
+        </address>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="mt-3 col-3"><label for="selection">Gender</label>
+    <select name="gender" id="gender" class="form-select form-select-sm">
+      <option value="None">None</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select></div>
+  <div class="mb-3 col-3">
+
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your@gmail.com">
+  </div>
+  <div class="mb-3 col-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Message Us</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="4">Write here</textarea>
+  </div>
+  <div class="m-3 col-3 ">
+
+    <button class="btn btn-primary btn-lg" type="submit m-3" style="width: 200px;">Submit</button>
+  </div>
+  <div class="col-3 table-responsive d-flex align-items-end flex-column justify-content-end mb-5 float-end">
+    <table class="table table-dark table-hover table-bordered table-sm table caption-top" style="border: 3px solid;">
+      <caption style="font-weight:bold ;">Operating Days and Hours</caption>
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Day</th>
+          <th scope="col">Opens</th>
+          <th scope="col">Closes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Monday</th>
+          <td>09:30</td>
+          <td>17:30</td>
+        </tr>
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td>09:30</td>
+          <td>17:30</td>
+        </tr>
+        <tr>
+          <th scope="row">Wednesday</th>
+          <td>09:30</td>
+          <td>17:30</td>
+        </tr>
+        <th scope="row">Thursday</th>
+        <td>09:30</td>
+        <td>17:30</td>
+        </tr>
+        <tr>
+          <th scope="row">Friday</th>
+          <td>09:30</td>
+          <td>17:30</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday</th>
+          <td>09:30</td>
+          <td>14:30</td>
+        </tr>
+        <tr>
+          <th scope="row">Sunday</th>
+          <td>09:30</td>
+          <td>11:30</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div class="mt-2">
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-bottom " style="height: 40px;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Find us</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown ">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#"><i class="bi bi-whatsapp"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
